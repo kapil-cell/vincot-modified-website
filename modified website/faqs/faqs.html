@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQs - Your Company</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    :root {
+      --color-primary: #4a90e2;
+      --color-secondary: #f5f7fa;
+      --color-accent: #ff6f61;
+      --color-dark: #1a1a1a;
+      --color-light-text: #666666;
+      --faq-bg: white;
+      --faq-border: #ddd;
+      --faq-hover-bg: #f0f8ff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--color-secondary);
+      color: var(--color-dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover,
+    header nav a:focus {
+      color: var(--color-accent);
+      outline: none;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto 4rem auto;
+      padding: 0 1rem;
+      flex-grow: 1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1.5rem;
+      border-bottom: 4px solid var(--color-accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    .faq-item {
+      background-color: var(--faq-bg);
+      border: 1px solid var(--faq-border);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-item:hover,
+    .faq-item:focus-within {
+      background-color: var(--faq-hover-bg);
+    }
+
+    .faq-question {
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--color-accent);
+      user-select: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-question:focus {
+      outline: 3px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+
+    .faq-answer {
+      padding: 0 1.5rem 1rem 1.5rem;
+      font-size: 1rem;
+      color: var(--color-light-text);
+      line-height: 1.4;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px; /* large enough for text */
+    }
+
+    .faq-icon {
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--color-primary);
+      color: white;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      main {
+        margin: 2rem 0 3rem 0;
+        padding: 0 1rem;
+      }
+      .faq-question {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="careers.html">Careers</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html" aria-current="page">FAQs</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item" tabindex="0">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq1-answer" id="faq1">
+        What is your company’s mission?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="faq1-answer" role="region" aria-labelledby="faq1">
+        Our mission is to deliver innovative, high-quality solutions that positively impact our customers and community.
+      </div>
+    </div>
+
+    <div class="faq-item" tabindex="0">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq2-answer" id="faq2">
+        How can I apply for a job?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="faq2-answer" role="region" aria-labelledby="faq2">
+        Visit our Careers page to explore current openings and submit your application through the provided links.
+      </div>
+    </div>
+
+    <div class="faq-item" tabindex="0">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq3-answer" id="faq3">
+        Do you offer remote work opportunities?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="faq3-answer" role="region" aria-labelledby="faq3">
+        Yes, we support flexible working arrangements including remote and hybrid positions where applicable.
+      </div>
+    </div>
+
+    <div class="faq-item" tabindex="0">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq4-answer" id="faq4">
+        How do I contact customer support?
+        <span class="faq-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-answer" id="faq4-answer" role="region" aria-labelledby="faq4">
+        You can reach out to our support team via the Contact page or email support@yourcompany.com.
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2024 Your Company. All rights reserved.
+  </footer>
+
+  <script>
+    // FAQ toggle functionality
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Close all other faq items
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem) {
+            item.classList.remove('open');
+            const btn = item.querySelector('.faq-question');
+            btn.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        if (expanded) {
+          faqItem.classList.remove('open');
+          button.setAttribute('aria-expanded', 'false');
+        } else {
+          faqItem.classList.add('open');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      // Allow toggle via keyboard (Enter and Space)
+      button.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          button.click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+

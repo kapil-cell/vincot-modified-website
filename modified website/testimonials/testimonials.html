@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testimonials - Your Company</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    :root {
+      --color-primary: #4a90e2;
+      --color-secondary: #f5f7fa;
+      --color-accent: #ff6f61;
+      --color-dark: #1a1a1a;
+      --color-light-text: #666666;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--color-secondary);
+      color: var(--color-dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover,
+    header nav a:focus {
+      color: var(--color-accent);
+      outline: none;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto 4rem auto;
+      padding: 0 1rem;
+      flex-grow: 1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1.5rem;
+      border-bottom: 4px solid var(--color-accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    #testimonials {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .testimonial-card {
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(74, 144, 226, 0.15);
+      transition: box-shadow 0.3s ease;
+      cursor: default;
+      outline-offset: 4px;
+    }
+
+    .testimonial-card:hover,
+    .testimonial-card:focus-within {
+      box-shadow: 0 6px 20px rgba(255, 111, 97, 0.3);
+      outline: none;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--color-dark);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--color-primary);
+      font-size: 1.1rem;
+    }
+
+    .testimonial-role {
+      color: var(--color-light-text);
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--color-primary);
+      color: white;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      main {
+        margin: 2rem 0 3rem 0;
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="careers.html">Careers</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="testimonials.html" aria-current="page">Testimonials</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>What Our Clients Say</h1>
+    <section id="testimonials" aria-label="Client testimonials">
+      <article class="testimonial-card" tabindex="0">
+        <p class="testimonial-text">"Your Company transformed our business with their expert consulting services. Their team was professional, responsive, and truly understood our needs."</p>
+        <div class="testimonial-author">Jane Doe</div>
+        <div class="testimonial-role">CEO, Acme Corp</div>
+      </article>
+      <article class="testimonial-card" tabindex="0">
+        <p class="testimonial-text">"The development team delivered a scalable and secure solution on time. We highly recommend them for any software project."</p>
+        <div class="testimonial-author">John Smith</div>
+        <div class="testimonial-role">CTO, Tech Innovators</div>
+      </article>
+      <article class="testimonial-card" tabindex="0">
+        <p class="testimonial-text">"Their creative designs helped us elevate our brand identity and stand out in a crowded market."</p>
+        <div class="testimonial-author">Emily White</div>
+        <div class="testimonial-role">Marketing Director, BrightAgency</div>
+      </article>
+      <article class="testimonial-card" tabindex="0">
+        <p class="testimonial-text">"Support was excellent — quick, helpful, and available whenever we needed them. It gave us peace of mind."</p>
+        <div class="testimonial-author">Michael Brown</div>
+        <div class="testimonial-role">Operations Manager, RetailCo</div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Your Company. All rights reserved.
+  </footer>
+</body>
+</html>

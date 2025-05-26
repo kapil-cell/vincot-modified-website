@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Your Company</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    :root {
+      --color-primary: #4a90e2;
+      --color-secondary: #f5f7fa;
+      --color-accent: #ff6f61;
+      --color-dark: #1a1a1a;
+      --color-light-text: #666666;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--color-secondary);
+      color: var(--color-dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover,
+    header nav a:focus {
+      color: var(--color-accent);
+      outline: none;
+    }
+    
+    main {
+      max-width: 900px;
+      margin: 3rem auto 4rem auto;
+      padding: 0 1rem;
+      flex-grow: 1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1.5rem;
+      border-bottom: 4px solid var(--color-accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    article.post {
+      background-color: white;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s ease;
+    }
+
+    article.post:hover,
+    article.post:focus-within {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    article.post h2 {
+      color: var(--color-accent);
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    article.post p {
+      color: var(--color-light-text);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    article.post time {
+      color: var(--color-dark);
+      font-size: 0.875rem;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--color-primary);
+      color: white;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      main {
+        margin: 2rem 0 3rem 0;
+        padding: 0 1rem;
+      }
+      article.post {
+        padding: 1rem 1.25rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+      <a href="careers.html">Careers</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Latest Blog Posts</h1>
+    
+    <article class="post" tabindex="0">
+      <h2>Embracing Modern Web Technologies</h2>
+      <time datetime="2024-06-01">June 1, 2024</time>
+      <p>Discover how modern web technologies are reshaping the user experience and why adopting them early can give your business a significant edge. From progressive web apps to AI integrations, stay ahead of the curve.</p>
+      <a href="#" aria-label="Read more about Embracing Modern Web Technologies" style="color: var(--color-primary); font-weight: 600; text-decoration: none;">Read More &rarr;</a>
+    </article>
+
+    <article class="post" tabindex="0">
+      <h2>Our Journey to Sustainability</h2>
+      <time datetime="2024-05-15">May 15, 2024</time>
+      <p>Learn about our sustainable initiatives and how we are committed to reducing our carbon footprint through eco-friendly practices and community engagement. Sustainability is not just a goal, it’s a core value.</p>
+      <a href="#" aria-label="Read more about Our Journey to Sustainability" style="color: var(--color-primary); font-weight: 600; text-decoration: none;">Read More &rarr;</a>
+    </article>
+
+    <article class="post" tabindex="0">
+      <h2>Top Tips for Remote Work Success</h2>
+      <time datetime="2024-04-30">April 30, 2024</time>
+      <p>Explore practical strategies to stay productive and maintain work-life balance while working remotely from anywhere in the world. Our expert tips can help you thrive in a flexible work environment.</p>
+      <a href="#" aria-label="Read more about Top Tips for Remote Work Success" style="color: var(--color-primary); font-weight: 600; text-decoration: none;">Read More &rarr;</a>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2024 Your Company. All rights reserved.
+  </footer>
+</body>
+</html>
+

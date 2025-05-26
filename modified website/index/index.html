@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vicnot - Leading technology company specializing in SEO, IoT Solutions, and Custom Software Development" />
+    <meta name="keywords" content="SEO, IoT, Software Development, Technology Solutions" />
+    <title>Vicnot - Technology Solutions | SEO, IoT, Software Development</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home')">Vicnot</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('services')">Services</a></li>
+                <li><a href="#" onclick="showPage('portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="#" onclick="showPage('careers')">Careers</a></li>
+                <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Page Navigation (visible on all pages) -->
+    <div class="page-nav">
+        <ul>
+            <nav aria-label="Primary navigation">
+             <a href="index.html">Home</a>
+             <a href="about.html">About</a>
+             <a href="blog.html">Blog</a>
+             <a href="careers.html">Careers</a>
+             <a href="services.html">Services</a>
+             <a href="contact.html">Contact</a>
+             <a href="faqs.html">FAQs</a>
+             <a href="portfolio.html">Portfolio</a>
+             <a href="privacy.html">Privacy Policy</a>
+              <a href="terms.html">Terms of Use</a>
+              <a href="testimonials.html">Testimonials</a>
+            </nav>
+
+        </ul>
+    </div>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page-content active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Digital Future</h1>
+                <p>Leading technology solutions in SEO, IoT, and Custom Software Development</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary" onclick="showPage('services')">Our Services</a>
+                    <a href="#" class="btn btn-secondary" onclick="showPage('contact')">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Core Services</h2>
+                    <p>Comprehensive technology solutions designed to accelerate your business growth</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🔍</div>
+                        <h3>Search Engine Optimization</h3>
+                        <p>Boost your online visibility with our advanced SEO strategies and data-driven approaches.</p>
+                        <a href="#" class="btn btn-primary" onclick="showPage('services')">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>IoT Solutions</h3>
+                        <p>Connect your devices and systems with our cutting-edge IoT solutions for smart automation.</p>
+                        <a href="#" class="btn btn-primary" onclick="showPage('services')">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Custom Software Development</h3>
+                        <p>Tailored software solutions built with modern technologies to meet your specific business needs.</p>
+                        <a href="#" class="btn btn-primary" onclick="showPage('services')">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Why Choose Vicnot?</h2>
+                        <p>
+                            With years of experience in technology solutions, we've helped hundreds of businesses transform their digital presence and operational efficiency.
+                        </p>
+                        <p>
+                            Our team of experts combines technical excellence with strategic thinking to deliver solutions that drive real business results.
+                        </p>
+                        <a href="#" class="btn btn-primary" onclick="showPage('about')">Learn About Us</a>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT US PAGE -->
+    <div id="about" class="page-content">
+        <div class="page-header">
+            <div class="container">
+                <h1>About Vicnot</h1>
+                <p>Pioneering technology solutions since 2019</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#" onclick="showPage('home')">Home</a> / About Us
+            </div>
+
+            <div class="content-section">
+                <h2>Our Story</h2>
+                <p>
+                    Founded in 2019, Vicnot emerged from a simple vision: to bridge the gap between cutting-edge technology and practical business solutions. What started as a small team of passionate developers has grown into a comprehensive technology partner serving clients across various industries.
+                </p>
+                <p>
+                    Our journey began with a focus on web development, but we quickly expanded our expertise to include Search Engine Optimization, Internet of Things solutions, and custom software development. Today, we're proud to be a trusted partner for businesses looking to leverage technology for growth and efficiency.
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2>Our Mission</h2>
+                <p>
+                    To empower businesses with innovative technology solutions that drive growth, efficiency, and competitive advantage in the digital age.
+                </p>
+                <h2>Our Vision</h2>
+                <p>
+                    To be the leading technology partner that transforms businesses through strategic innovation and excellence in digital solutions.
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-avatar">JD</div>
+                        <h3>John Davidson</h3>
+                        <p><strong>CEO &amp; Founder</strong></p>
+                        <p>10+ years in technology leadership and business strategy</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar">SM</div>
+                        <h3>Sarah Martinez</h3>
+                        <p><strong>CTO</strong></p>
+                        <p>Expert in software architecture and IoT solutions</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar">MK</div>
+                        <h3>Michael Kim</h3>
+                        <p><strong>Head of SEO</strong></p>
+                        <p>Digital marketing specialist with proven track record</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar">AJ</div>
+                        <h3>Anna Johnson</h3>
+                        <p><strong>Lead Developer</strong></p>
+                        <p>Full-stack development expert with 8+ years experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Our Values</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3>Excellence</h3>
+                        <p>We strive for perfection in every project, ensuring quality that exceeds expectations.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🤝</div>
+                        <h3>Partnership</h3>
+                        <p>We build long-term relationships based on trust, transparency, and mutual success.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>Innovation</h3>
+                        <p>We embrace emerging technologies to provide cutting-edge solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="services" class="page-content">
+        <div class="page-header">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>Comprehensive technology solutions for modern businesses</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#" onclick="showPage('home')">Home</a> / Services
+            </div>
+
+            <div class="content-section">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🔍</div>
+                        <h3>Search Engine Optimization (SEO)</h3>
+                        <p>Comprehensive SEO strategies to improve your online visibility and drive organic traffic.</p>
+                        <ul style="text-align: left; margin: 1rem 0;">
+                            <li>Keyword Research &amp; Analysis</li>
+                            <li>On-Page &amp; Technical SEO</li>
+                            <li>Content Strategy &amp; Optimization</li>
+                            <li>Link Building &amp; Outreach</li>
+                            <li>Local SEO &amp; Google My Business</li>
+                            <li>SEO Audits &amp; Reporting</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Get Quote</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>IoT Solutions</h3>
+                        <p>Smart connectivity solutions that transform how your business operates and interacts with technology.</p>
+                        <ul style="text-align: left; margin: 1rem 0;">
+                            <li>IoT Device Development</li>
+                            <li>Sensor Networks &amp; Data Collection</li>
+                            <li>Cloud Integration &amp; Analytics</li>
+                            <li>Smart Home &amp; Office Solutions</li>
+                            <li>Industrial IoT Implementation</li>
+                            <li>Security &amp; Device Management</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Get Quote</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Custom Software Development</h3>
+                        <p>Tailored software solutions built with cutting-edge technologies to meet your unique business requirements.</p>
+                        <ul style="text-align: left; margin: 1rem 0;">
+                            <li>Web Application Development</li>
+                            <li>Mobile App Development</li>
+                            <li>Desktop Software Solutions</li>
+                            <li>API Development &amp; Integration</li>
+                            <li>Database Design &amp; Management</li>
+                            <li>Maintenance &amp; Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Our Development Process</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">1️⃣</div>
+                        <h3>Discovery &amp; Planning</h3>
+                        <p>We analyze your requirements, define project scope, and create a detailed roadmap for success.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">2️⃣</div>
+                        <h3>Design &amp; Development</h3>
+                        <p>Our expert team creates and develops your solution using the latest technologies and best practices.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">3️⃣</div>
+                        <h3>Testing &amp; Deployment</h3>
+                        <p>Rigorous testing ensures quality, followed by smooth deployment and ongoing support.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Technologies We Use</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>Frontend</h4>
+                        <p>React, Vue.js, Angular, HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>Backend</h4>
+                        <p>Node.js, Python, PHP, Java, .NET</p>
+                    </div>
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>Database</h4>
+                        <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+                    </div>
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>Cloud &amp; DevOps</h4>
+                        <p>AWS, Google Cloud, Docker, Kubernetes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO PAGE -->
+    <div id="portfolio" class="page-content">
+        <div class="page-header">
+            <div class="container">
+                <h1>Our Portfolio</h1>
+                <p>Showcasing our successful projects and client solutions</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#" onclick="showPage('home')">Home</a> / Portfolio
+            </div>
+
+            <div class="content-section">
+                <h2>Featured Projects</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">🛍️</div>
+                        <div class="portfolio-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p><strong>Client:</strong> RetailMax Solutions</p>
+                            <p>Custom e-commerce platform with advanced inventory management, payment integration, and mobile-responsive design.</p>
+                            <p><strong>Technologies:</strong> React, Node.js, MongoDB, Stripe API</p>
+                            <p><strong>Results:</strong> 150% increase in online sales, 40% reduction in cart abandonment</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">🏭</div>
+                        <div class="portfolio-content">
+                            <h3>Smart Factory IoT System</h3>
+                            <p><strong>Client:</strong> Industrial Dynamics Corp</p>
+                            <p>IoT-based monitoring system for factory equipment with real-time analytics and predictive maintenance alerts.</p>
+                            <p><strong>Technologies:</strong> Arduino, Python, AWS IoT, React Dashboard</p>
+                            <p><strong>Results:</strong> 30% reduction in downtime, $500K annual savings</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">📈</div>
+                        <div class="portfolio-content">
+                            <h3>SEO Campaign Success</h3>
+                            <p><strong>Client:</strong> HealthTech Innovations</p>
+                            <p>Comprehensive SEO strategy including technical optimization, content marketing, and local search optimization.</p>
+                            <p><strong>Services:</strong> Technical SEO, Content Strategy, Link Building</p>
+                            <p><strong>Results:</strong> 300% increase in organic traffic, #1 ranking for 15 key terms</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">📱</div>
+                        <div class="portfolio-content">
+                            <h3>Mobile Banking App</h3>
+                            <p><strong>Client:</strong> Community First Bank</p>
+                            <p>Secure mobile banking application with biometric authentication, real-time transactions, and investment tracking.</p>
+                            <p><strong>Technologies:</strong> React Native, Node.js, PostgreSQL, OAuth2</p>
+                            <p><strong>Results:</strong> 50,000+ downloads, 4.8/5 app store rating</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">🏠</div>
+                        <div class="portfolio-content">
+                            <h3>Smart Home Automation</h3>
+                            <p><strong>Client:</strong> Luxury Residences LLC</p>
+                            <p>Complete smart home solution with voice control, energy management, and security integration.</p>
+                            <p><strong>Technologies:</strong> Raspberry Pi, Python, Alexa Skills, Mobile App</p>
+                            <p><strong>Results:</strong> 40% energy savings, enhanced security and convenience</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">📊</div>
+                        <div class="portfolio-content">
+                            <h3>Business Intelligence Dashboard</h3>
+                            <p><strong>Client:</strong> DataDriven Logistics</p>
+                            <p>Real-time analytics dashboard for supply chain management with predictive insights and automated reporting.</p>
+                            <p><strong>Technologies:</strong> Vue.js, Python, PostgreSQL, Chart.js</p>
+                            <p><strong>Results:</strong> 25% improvement in decision-making speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Client Success Stories</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3>TechStart Solutions</h3>
+                        <p>"Vicnot transformed our online presence with their SEO expertise. Our website traffic increased by 400% in just 6 months, leading to a significant boost in leads and sales."</p>
+                        <p><strong>- Mark Johnson, CEO</strong></p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Manufacturing Plus</h3>
+                        <p>"The IoT solution provided by Vicnot revolutionized our production line. We now have real-time insights that help us prevent costly breakdowns and optimize efficiency."</p>
+                        <p><strong>- Lisa Chen, Operations Director</strong></p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>Digital Innovations</h3>
+                        <p>"Working with Vicnot was exceptional. They delivered a custom software solution that perfectly matched our requirements and exceeded our expectations in terms of quality and performance."</p>
+                        <p><strong>- Robert Davis, CTO</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page-content">
+        <div class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Let's discuss your next project</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#" onclick="showPage('home')">Home</a> / Contact
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 2rem 0;">
+                <div>
+                    <h2>Get In Touch</h2>
+                    <p>Ready to transform your business with cutting-edge technology solutions? We're here to help you every step of the way.</p>
+
+                    <div style="margin: 2rem 0;">
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">📍</div>
+                            <div>
+                                <strong>Address</strong><br />
+                                123 Technology Drive<br />
+                                Innovation District, Tech City 12345
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">📞</div>
+                            <div>
+                                <strong>Phone</strong><br />
+                                +1 (555) 123-4567
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">✉️</div>
+                            <div>
+                                <strong>Email</strong><br />
+                                hello@vicnot.com
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">🕒</div>
+                            <div>
+                                <strong>Business Hours</strong><br />
+                                Mon - Fri: 9:00 AM - 6:00 PM<br />
+                                Sat: 10:00 AM - 4:00 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="seo">Search Engine Optimization</option>
+                                <option value="iot">IoT Solutions</option>
+                                <option value="software">Custom Software Development</option>
+                                <option value="all">All Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell us about your project requirements..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k+">$50,000+</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAREERS PAGE -->
+    <div id="careers" class="page-content">
+        <div class="page-header">
+            <div class="container">
+                <h1>Careers at Vicnot</h1>
+                <p>Join our team of technology innovators</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#" onclick="showPage('home')">Home</a> / Careers
+            </div>
+
+            <div class="content-section">
+                <h2>Why Work With Us?</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>Innovation-Driven</h3>
+                        <p>Work on cutting-edge projects using the latest technologies and methodologies.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📈</div>
+                        <h3>Career Growth</h3>
+                        <p>Continuous learning opportunities with mentorship and professional development programs.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏆</div>
+                        <h3>Competitive Benefits</h3>
+                        <p>Comprehensive benefits package including health insurance, retirement plans, and flexible PTO.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Current Openings</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span><strong>Senior Full-Stack Developer</strong> - Full Time</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Location:</strong> Tech City (Remote Available)</p>
+                        <p><strong>Experience:</strong> 5+ years</p>
+                        <p><strong>Skills Required:</strong></p>
+                        <ul>
+                            <li>React, Node.js, Python</li>
+                            <li>Database design (MySQL, MongoDB)</li>
+                            <li>Cloud platforms (AWS, GCP)</li>
+                            <li>DevOps experience preferred</li>
+                        </ul>
+                        <p><strong>Responsibilities:</strong></p>
+                        <ul>
+                            <li>Lead development of web applications</li>
+                            <li>Mentor junior developers</li>
+                            <li>Participate in architecture decisions</li>
+                            <li>Code review and quality assurance</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span><strong>IoT Solutions Engineer</strong> - Full Time</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Location:</strong> Tech City</p>
+                        <p><strong>Experience:</strong> 3+ years</p>
+                        <p><strong>Skills Required:</strong></p>
+                        <ul>
+                            <li>IoT protocols (MQTT, CoAP, HTTP)</li>
+                            <li>Embedded systems programming</li>
+                            <li>Arduino, Raspberry Pi experience</li>
+                            <li>Cloud IoT platforms</li>
+                        </ul>
+                        <p><strong>Responsibilities:</strong></p>
+                        <ul>
+                            <li>Design IoT system architectures</li>
+                            <li>Develop sensor networks</li>
+                            <li>Implement cloud integrations</li>
+                            <li>Client consultation and support</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span><strong>SEO Specialist</strong> - Full Time</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Location:</strong> Remote</p>
+                        <p><strong>Experience:</strong> 2+ years</p>
+                        <p><strong>Skills Required:</strong></p>
+                        <ul>
+                            <li>Google Analytics, Search Console</li>
+                            <li>Technical SEO expertise</li>
+                            <li>Content optimization</li>
+                            <li>Link building strategies</li>
+                        </ul>
+                        <p><strong>Responsibilities:</strong></p>
+                        <ul>
+                            <li>Conduct SEO audits and analysis</li>
+                            <li>Develop SEO strategies</li>
+                            <li>Monitor and report on performance</li>
+                            <li>Stay updated with algorithm changes</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span><strong>Junior Developer Internship</strong> - Internship</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Location:</strong> Tech City</p>
+                        <p><strong>Duration:</strong> 3-6 months</p>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Computer Science or related field student</li>
+                            <li>Basic knowledge of web development</li>
+                            <li>Eagerness to learn and grow</li>
+                            <li>Good communication skills</li>
+                        </ul>
+                        <p><strong>What You'll Learn:</strong></p>
+                        <ul>
+                            <li>Real-world software development</li>
+                            <li>Professional development practices</li>
+                            <li>Team collaboration</li>
+                            <li>Industry best practices</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Employee Benefits</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>🏥 Health &amp; Wellness</h4>
+                        <ul style="margin-top: 1rem;">
+                            <li>Comprehensive health insurance</li>
+                            <li>Dental and vision coverage</li>
+                            <li>Mental health support</li>
+                            <li>Gym membership reimbursement</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>💼 Professional Development</h4>
+                        <ul style="margin-top: 1rem;">
+                            <li>Training and certification programs</li>
+                            <li>Mentorship opportunities</li>
+                            <li>Conference attendance support</li>
+                            <li>Access to online learning platforms</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>🏖️ Work-Life Balance</h4>
+                        <ul style="margin-top: 1rem;">
+                            <li>Flexible work hours</li>
+                            <li>Remote work options</li>
+                            <li>Generous paid time off</li>
+                            <li>Company retreats and team-building events</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>💰 Competitive Compensation</h4>
+                        <ul style="margin-top: 1rem;">
+                            <li>Attractive salary packages</li>
+                            <li>Performance bonuses</li>
+                            <li>Stock options for key positions</li>
+                            <li>Retirement savings plans</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>🌍 Diversity &amp; Inclusion</h4>
+                        <ul style="margin-top: 1rem;">
+                            <li>Inclusive workplace culture</li>
+                            <li>Diversity training programs</li>
+                            <li>Employee resource groups</li>
+                            <li>Equal opportunity employer</li>
+                        </ul>
+                    </div>
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h4>🎉 Fun &amp; Engagement</h4>
+                        <ul style="margin-top: 1rem;">
+                            <li>Monthly team celebrations</li>
+                            <li>Office games and activities</li>
+                            <li>Volunteer opportunities</li>
+                            <li>Annual company parties</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p>🏢 123 Technology Drive,<br />Innovation District,<br />Tech City 12345</p>
+      <p>📞 <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+      <p>✉️ <a href="mailto:hello@vicnot.com">hello@vicnot.com</a></p>
+    </div>
+
+    <div class="footer-section footer-social">
+      <h3>Follow Us</h3>
+      <ul class="social-links" aria-label="Social media links">
+        <li><a href="https://facebook.com/vicnot" target="_blank" rel="noopener" aria-label="Facebook" class="social-link facebook">📘  Facebook</a></li>
+        <li><a href="https://twitter.com/vicnot" target="_blank" rel="noopener" aria-label="Twitter" class="social-link twitter">🐦  Twitter</a></li>
+        <li><a href="https://linkedin.com/company/vicnot" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link linkedin">🔗  LinkedIn</a></li>
+        <li><a href="https://instagram.com/vicnot" target="_blank" rel="noopener" aria-label="Instagram" class="social-link instagram">📸  Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section footer-newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Stay updated with the latest technology solutions and insights.</p>
+      <form id="newsletterForm" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');" class="newsletter-form">
+        <input type="email" id="newsletterEmail" name="newsletterEmail" placeholder="Enter your email" required aria-label="Email address"/>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-copy-container">
+      <p>&copy; 2019 - 2024 Vicnot. All rights reserved.</p>
+      <nav aria-label="Footer quick links">
+        <ul class="footer-quick-links">
+          <li><a href="#" onclick="showPage('privacy')">Privacy Policy</a></li>
+          <li><a href="#" onclick="showPage('terms')">Terms of Service</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Your Company</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    :root {
+      --color-primary: #4a90e2;
+      --color-secondary: #f5f7fa;
+      --color-accent: #ff6f61;
+      --color-dark: #1a1a1a;
+      --color-light-text: #666666;
+      --card-bg: white;
+      --card-shadow: rgba(0,0,0,0.05);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--color-secondary);
+      color: var(--color-dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover,
+    header nav a:focus {
+      color: var(--color-accent);
+      outline: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 3rem auto 4rem auto;
+      padding: 0 1rem;
+      flex-grow: 1;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      color: var(--color-primary);
+      margin-bottom: 2rem;
+      border-bottom: 4px solid var(--color-accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+      gap: 2rem;
+    }
+
+    .portfolio-card {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 6px 18px var(--card-shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .portfolio-card:hover,
+    .portfolio-card:focus-within {
+      transform: translateY(-7px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      outline: none;
+    }
+
+    .portfolio-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background-color: #ddd;
+    }
+
+    .portfolio-content {
+      padding: 1.25rem 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .portfolio-title {
+      font-size: 1.5rem;
+      color: var(--color-accent);
+      margin: 0 0 0.5rem 0;
+      font-weight: 700;
+    }
+
+    .portfolio-description {
+      color: var(--color-light-text);
+      font-size: 1rem;
+      flex-grow: 1;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .portfolio-link {
+      text-decoration: none;
+      color: var(--color-primary);
+      font-weight: 600;
+      font-size: 1rem;
+      align-self: flex-start;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .portfolio-link:hover,
+    .portfolio-link:focus {
+      border-color: var(--color-accent);
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--color-primary);
+      color: white;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      main {
+        margin: 2rem 1rem 3rem 1rem;
+      }
+      .portfolio-image {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="careers.html">Careers</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Portfolio</h1>
+    <div class="portfolio-grid">
+      <article class="portfolio-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Project Alpha screenshot" class="portfolio-image" />
+        <div class="portfolio-content">
+          <h2 class="portfolio-title">Project Alpha</h2>
+          <p class="portfolio-description">A cutting-edge web app that transforms online collaboration with real-time editing and smart task management.</p>
+          <a href="#" class="portfolio-link" aria-label="View details about Project Alpha">View Details</a>
+        </div>
+      </article>
+
+      <article class="portfolio-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=400&q=80" alt="E-commerce Website screenshot" class="portfolio-image" />
+        <div class="portfolio-content">
+          <h2 class="portfolio-title">E-commerce Website</h2>
+          <p class="portfolio-description">A beautifully designed online store with seamless checkout processes and engaging product showcases.</p>
+          <a href="#" class="portfolio-link" aria-label="View details about E-commerce Website">View Details</a>
+        </div>
+      </article>
+
+      <article class="portfolio-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Mobile Travel App screenshot" class="portfolio-image" />
+        <div class="portfolio-content">
+          <h2 class="portfolio-title">Travel Mobile App</h2>
+          <p class="portfolio-description">An intuitive app connecting travelers with personalized itineraries and local experiences around the globe.</p>
+          <a href="#" class="portfolio-link" aria-label="View details about Travel Mobile App">View Details</a>
+        </div>
+      </article>
+
+      <article class="portfolio-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Marketing Campaign Website screenshot" class="portfolio-image" />
+        <div class="portfolio-content">
+          <h2 class="portfolio-title">Marketing Campaign</h2>
+          <p class="portfolio-description">A responsive microsite designed for a global marketing campaign, driving engagement and brand awareness.</p>
+          <a href="#" class="portfolio-link" aria-label="View details about Marketing Campaign">View Details</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2024 Your Company. All rights reserved.
+  </footer>
+</body>
+</html>
+

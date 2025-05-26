@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+      main {
+        margin: 2rem 0 3rem 0;
+        padding: 0 1rem;
+      }
+      ul.job-listings li {
+        padding: 1rem 1.25rem;
+      }
+            ul.job-listings li h2 {
+              font-size: 1.4rem;
+            }
+      }

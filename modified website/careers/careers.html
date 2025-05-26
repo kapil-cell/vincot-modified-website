@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Careers - Your Company</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    :root {
+      --color-primary: #4a90e2;
+      --color-secondary: #f5f7fa;
+      --color-accent: #ff6f61;
+      --color-dark: #1a1a1a;
+      --color-light-text: #666666;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--color-secondary);
+      color: var(--color-dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover,
+    header nav a:focus {
+      color: var(--color-accent);
+      outline: none;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto 4rem auto;
+      padding: 0 1rem;
+      flex-grow: 1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1.5rem;
+      border-bottom: 4px solid var(--color-accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    ul.job-listings {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.job-listings li {
+      background-color: white;
+      margin-bottom: 2rem;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s ease;
+      outline-offset: 4px;
+    }
+    ul.job-listings li:hover,
+    ul.job-listings li:focus-within {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    ul.job-listings li h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.8rem;
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    ul.job-listings li p {
+      margin: 0 0 1rem 0;
+      font-size: 1rem;
+      color: var(--color-light-text);
+      line-height: 1.5;
+    }
+
+    ul.job-listings li button.apply-btn {
+      background-color: var(--color-primary);
+      border: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    ul.job-listings li button.apply-btn:hover,
+    ul.job-listings li button.apply-btn:focus {
+      background-color: #3a74c0;
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--color-primary);
+      color: white;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      main {
+        margin: 2rem 0 3rem 0;
+        padding: 0 1rem;
+      }
+      ul.job-listings li {
+        padding: 1rem 1.25rem;
+      }
+      ul.job-listings li h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="careers.html" aria-current="page">Careers</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Careers</h1>
+    <ul class="job-listings">
+      <li tabindex="0">
+        <h2>Frontend Developer</h2>
+        <p>Join our dynamic team building cutting-edge user interfaces with the latest technologies.</p>
+        <button class="apply-btn" aria-label="Apply for Frontend Developer">Apply Now</button>
+      </li>
+      <li tabindex="0">
+        <h2>Product Manager</h2>
+        <p>Lead cross-functional teams to deliver products that delight customers and meet business goals.</p>
+        <button class="apply-btn" aria-label="Apply for Product Manager">Apply Now</button>
+      </li>
+      <li tabindex="0">
+        <h2>UX Designer</h2>
+        <p>Create intuitive and engaging user experiences that transform ambitious ideas into reality.</p>
+        <button class="apply-btn" aria-label="Apply for UX Designer">Apply Now</button>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2024 Your Company. All rights reserved.
+  </footer>
+</body>
+</html>
+
